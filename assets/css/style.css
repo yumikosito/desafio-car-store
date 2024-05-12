@@ -8,14 +8,13 @@ header{
   justify-content: space-evenly;
 }
 
-
 main{
   grid-area: main;
   background-color: white;
 }
 footer{
   grid-area: footer;
-  background-color: blueviolet;
+  background-color: rgb(240, 54, 162);
   color: white;
   text-align: center;
   width: auto;
@@ -32,7 +31,6 @@ body {
   grid-area: search;
   position: relative;
   text-align: center;
-
 }
 
 .category {
@@ -111,6 +109,17 @@ i{
   grid-template-columns: 1fr;
   gap: 10px;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.pag {
+  background-color: pink;
+  padding: 10px;
+  border: 1px solid violet;
+}
+
 @media (max-width:576px) {
   .grid-container {
     display: grid;
