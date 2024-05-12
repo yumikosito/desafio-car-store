@@ -1,6 +1,6 @@
 header{
   grid-area: header;
-  background-color: blueviolet;
+  background-color: rgb(240, 54, 162);
   color: white;
   text-align: center;
   display: flex;
@@ -24,7 +24,9 @@ footer{
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  height: 100vh;
+  margin: 0;
+  width: 100%;
+
 }
 
 .custom-select {
@@ -33,6 +35,11 @@ body {
   text-align: center;
 }
 
+select {
+  padding: 1rem;
+  margin: 0;
+  width: 100%;
+}
 .category {
   font-weight: 400;
 }
@@ -83,7 +90,7 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blueviolet;
+  background-color: rgb(42, 149, 236);
   color: white;
   margin: 0rem;
   padding: 0.5em 7rem;
@@ -120,6 +127,10 @@ a {
   border: 1px solid violet;
 }
 
+.pag-f {
+  color: rgb(240, 54, 162);
+}
+
 @media (max-width:576px) {
   .grid-container {
     display: grid;
@@ -150,6 +161,7 @@ a {
   }
   .main-container {
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
   }
@@ -179,6 +191,7 @@ a {
   }
   .main-container {
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
   }
